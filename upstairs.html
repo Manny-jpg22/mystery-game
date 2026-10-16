@@ -3,40 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mystery Game - Upstairs  </title>
+    <title>Mystery Game</title>
 </head>
 <body>
     <header>
-        <h1>The Abandoned Hotel</h1>
-        <h2>Upstairs</h2>
+        <h1>The Last Night at Blackwood Hotel</h1>
+        <h2>Room 207</h2>
     </header>
     <main>
         <section>
             <h3>Location</h3>
 
         <figure>
-            <img src="upstairs.jpg" alt="An Abandoned hotel upstairs" width="600" height="400">
-            <figcaption>Upstairs</figcaption>
+            <img src="" width="600" height="400">
+            <figcaption>Room 207</figcaption>
         </figure>
         <p>The second floor is much colder than the rest of the hotel. At the end of the hallway is Room 207. You can see scratches covering the outside of the door. A message has been written into the wood: “DON'T LET HIM OUT.” You hear something moving inside. If you have the key, you can unlock the door. If you don't, you must search the nearby rooms for another way inside.</p>
         </section>
 
         <section>
-            <h3>Inventory</h3>
-            <ul>
-                <li>Empty</li>
-            </ul>
+            <h3>Dark Hallways</h3>
+            <div data-needs="flashlight">
+                <p>You switch on the flashlight and can see the path ahead.</p>
+                <a href="trapped-ending.html">
+                    <button>Explore the dark Hallways</button>
+                </a>
+            </div>
+            <div date-missing="flashlight">
+                <p>It's too dark to see. You need a flashlight to continue.</p>
+            </div>
+            <a href="Security-Room.html">
+                <button>Return to the Security Room</button>
+            </a>
         </section>
 
         <section>
             <h3>Choices</h3>
-            <button>Check the Front Desk</button>
-            <button>Enter the Dining Room</button>
+            <a href="Security-Room.html">
+                <button>Check the Security Room</button>
+            </a>
+            <a href="escape-ending.html">
+                <button>Try to Escape the Hotel</button>
+            </a>
+            <a href="rescue-ending.html">
+                <button>Search for Help</button>
+            </a>
+            <a href="Hallway.html">
+                <button>Return to the Hallways</button>
+            </a>
         </section>
+        <script src="game.js"></script>
     </main>
-    <footer>
-        <p>Mystery Game</p>
-    </footer>
-
 </body>
 </html>

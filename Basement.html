@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mystery Game - Basement  </title>
+    <title>Mystery Game</title>
 </head>
 <body>
     <header>
-        <h1>The Abandoned Hotel</h1>
-        <h2>Basement</h2>
+        <h1>The Last Night at Blackwood Hotel</h1>
+        <h2>The Basement</h2>
     </header>
     <main>
         <section>
             <h3>Location</h3>
 
         <figure>
-            <img src="" alt="An Abandoned hotel basement" width="600" height="400">
-            <figcaption>Basement</figcaption>
+            <img src=""width="600" height="400">
+            <figcaption>The Basement</figcaption>
         </figure>
         <p>The basement smells like damp concrete and old wood. Pipes run across the ceiling, dripping water onto the floor. Somewhere in the darkness, you hear Alex calling your name. “I'm over here!” You follow the voice through several storage rooms until you reach a large metal door. A strange symbol has been painted across it. You hear Alex again from the other side. “Please hurry.” You reach for the handle, but another voice whispers directly behind you: “That's not Alex.”</p>
         </section>
@@ -27,16 +27,35 @@
                 <li>Empty</li>
             </ul>
         </section>
+        <section>
+            <h3>Locked Door</h3>
+            <div data-needs="key">
+                <p>The brass key turns, and the locked door opens!</p>
+                <a href="Security-Room.html">
+                    <button>Enter the Security Room</button>
+                </a>
+            </div>
+            <div data-missing="key">
+                <p>The door is lockde. You need a key to open it.</p>
+            </div>
+            <a href="Lobby.html">
+                <button>Go back to the Lobby</button>
+            </a>
+        </section>
 
         <section>
             <h3>Choices</h3>
-            <button>Check the Front Desk</button>
-            <button>Enter the Dining Room</button>
+            <a href="Security-Room.html">
+                <button>Search for clues in the Security Room</button>
+            </a>
+            <a href="upstairs.html">
+                <button>Go Upstairs</button>
+            </a>
+            <a href="Lobby.html">
+                <button>Return to the Lobby</button>
+            </a>
         </section>
     </main>
-    <footer>
-        <p>Mystery Game</p>
-    </footer>
-
+<script src="game.js"></script>
 </body>
 </html>

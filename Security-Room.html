@@ -3,40 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mystery Game - Security Room</title>
+    <title>Mystery Game</title>
 </head>
 <body>
     <header>
-        <h1>The Abandoned Hotel</h1>
-        <h2>Security Room</h2>
+        <h1>The Last Night at Blackwood Hotel</h1>
+        <h2>The Security Room</h2>
     </header>
     <main>
         <section>
             <h3>Location</h3>
 
         <figure>
-            <img src="" alt="An Abandoned hotel security room" width="600" height="400">
-            <figcaption>Security Room</figcaption>
+            <img src="" width="600" height="400">
+            <figcaption>The Security Room</figcaption>
         </figure>
         <p>You use the master key to enter a small security room. Dozens of old monitors cover one wall. Most of them are broken, but one screen still works. The camera shows the lobby. You watch yourself standing at the front desk. Then you notice something behind you on the screen. A tall figure is standing in the hallway. You turn around in the real room. Nothing is there. When you look back at the screen, the figure is closer. A note taped beneath the monitor says: “The hotel remembers everyone who enters.”</p>
         </section>
 
         <section>
-            <h3>Inventory</h3>
-            <ul>
-                <li>Empty</li>
-            </ul>
+            <h3>Found Item</h3>
+            <p>You find a flashlight on the security desk.</p>
+            <button onclick="addItem('flashlight')">
+                Take the Flashlight
+            </button>
+            <p>Inventory: <span id="Inventory"></span></p>
         </section>
 
         <section>
             <h3>Choices</h3>
-            <button>Check the Front Desk</button>
-            <button>Enter the Dining Room</button>
+            <a href="upstairs.html">
+                <button>Check the upstairs cameras</button>
+            </a>
+            <a href="escape-ending.html">
+                <button>Follow the emergency exit route</button>
+            </a>
+            <a href="Basement.html">
+                <button>Return to the Basement</button>
+            </a>
+            <a href="Lobby.html">
+                <button>Return to the Lobby</button>
+            </a>
         </section>
+        <script src="game.js"></script>
     </main>
-    <footer>
-        <p>Mystery Game</p>
-    </footer>
-
 </body>
 </html>
