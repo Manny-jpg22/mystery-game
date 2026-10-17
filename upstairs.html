@@ -22,10 +22,19 @@
         </section>
 
         <section>
-            <h3>Inventory</h3>
-            <ul>
-                <li>Empty</li>
-            </ul>
+            <h3>Dark Hallways</h3>
+            <div data-needs="flashlight">
+                <p>You switch on the flashlight and can see the path ahead.</p>
+                <a href="trapped-ending.html">
+                    <button>Explore the dark Hallways</button>
+                </a>
+            </div>
+            <div date-missing="flashlight">
+                <p>It's too dark to see. You need a flashlight to continue.</p>
+            </div>
+            <a href="Security-Room.html">
+                <button>Return to the Security Room</button>
+            </a>
         </section>
 
         <section>
@@ -43,6 +52,7 @@
                 <button>Return to the Hallways</button>
             </a>
         </section>
+        <script src="game.js"></script>
     </main>
 </body>
 </html>

@@ -22,10 +22,12 @@
         </section>
 
         <section>
-            <h3>Inventory</h3>
-            <ul>
-                <li>Empty</li>
-            </ul>
+            <h3>Found Item</h3>
+            <p>You find a flashlight on the security desk.</p>
+            <button onclick="addItem('flashlight')">
+                Take the Flashlight
+            </button>
+            <p>Inventory: <span id="Inventory"></span></p>
         </section>
 
         <section>
@@ -43,6 +45,7 @@
                 <button>Return to the Lobby</button>
             </a>
         </section>
+        <script src="game.js"></script>
     </main>
 </body>
 </html>
